@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 // The Flask API endpoint
 const flaskUrl = 'https://web-production-5d37.up.railway.app/predict';
 
-app.post('/predict', async (req, res) => {
+app.post('/api/predict', async (req, res) => {
     const inputData = req.body.input;
 
     // Validate input data
